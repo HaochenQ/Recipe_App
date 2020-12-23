@@ -2,7 +2,7 @@
 
 Find your favorite food recipe! Click [here](https://recipe-app-frynn1bp8.vercel.app/) to try the demo.
 
-> > > powered by EDAMAM
+> Powered by EDAMAM
 
 ## How to Use
 
@@ -12,4 +12,4 @@ Simply type the keywords in the search bar and click the seach button, your rece
 
 ## Screen shot
 
-![screenshot](https://github.com/HaochenQ/Recipe_App/blob/main/public/recipe-app.png =640x480)
+![screenshot](https://github.com/HaochenQ/Recipe_App/blob/main/public/recipe-app.png)
