@@ -137,8 +137,7 @@ Navbar
 .navbar {
   /* background: var(--mainWhite); */
 
-  background: rgba(144, 144, 144, 0.2);
-
+  background: rgba(144, 144, 144, 0.3);
   position: absolute;
   top: 0;
   width: 100%;
@@ -150,7 +149,6 @@ Navbar
 }
 .nav-center {
   display: flex;
-  opacity: 100%;
   justify-content: space-between;
   align-items: center;
   width: var(--smallWidth);
@@ -158,12 +156,10 @@ Navbar
   max-width: var(--fullWidth);
 }
 .nav-links {
-  opacity: unset;
   display: flex;
   align-items: center;
 }
 .nav-links a {
-  opacity: unset;
   text-transform: capitalize;
   display: inline-block;
   font-weight: bold;
@@ -175,7 +171,6 @@ Navbar
   transition: var(--mainTransition);
 }
 .nav-links a:hover {
-  opacity: unset;
   color: var(--primaryColor);
 }
 .logo {
