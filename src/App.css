@@ -1,18 +1,6 @@
 .App {
   min-height: 100vh;
-  background-image: linear-gradient(to left, #bdbbbe 0%, #9d9ea3 100%),
-    radial-gradient(
-      88% 271%,
-      rgba(255, 255, 255, 0.25) 0%,
-      rgba(254, 254, 254, 0.25) 1%,
-      rgba(0, 0, 0, 0.25) 100%
-    ),
-    radial-gradient(
-      50% 100%,
-      rgba(255, 255, 255, 0.3) 0%,
-      rgba(0, 0, 0, 0.3) 100%
-    );
-  background-blend-mode: normal, lighten, soft-light;
+  position: relative;
 }
 .hero {
   /* Sizing */
@@ -26,7 +14,7 @@
   text-align: center;
 
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(./pasta.jpeg);
+    url(./hero/pasta.jpeg);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -56,6 +44,19 @@
   align-items: center; */
 }
 .recipes {
+  background-image: linear-gradient(to left, #bdbbbe 0%, #9d9ea3 100%),
+    radial-gradient(
+      88% 271%,
+      rgba(255, 255, 255, 0.25) 0%,
+      rgba(254, 254, 254, 0.25) 1%,
+      rgba(0, 0, 0, 0.25) 100%
+    ),
+    radial-gradient(
+      50% 100%,
+      rgba(255, 255, 255, 0.3) 0%,
+      rgba(0, 0, 0, 0.3) 100%
+    );
+  background-blend-mode: normal, lighten, soft-light;
   margin: 0%;
   display: flex;
   justify-content: flex-start;
@@ -66,6 +67,25 @@
   .recipes {
     justify-content: space-evenly;
   }
+}
+.footer {
+  background-image: linear-gradient(to left, #bdbbbe 0%, #9d9ea3 100%),
+    radial-gradient(
+      88% 271%,
+      rgba(255, 255, 255, 0.25) 0%,
+      rgba(254, 254, 254, 0.25) 1%,
+      rgba(0, 0, 0, 0.25) 100%
+    ),
+    radial-gradient(
+      50% 100%,
+      rgba(255, 255, 255, 0.3) 0%,
+      rgba(0, 0, 0, 0.3) 100%
+    );
+  background-blend-mode: normal, lighten, soft-light;
+
+  left: 0;
+  bottom: 0;
+  width: 100%;
 }
 .text {
   text-align: center;

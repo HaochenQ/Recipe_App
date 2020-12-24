@@ -1,12 +1,14 @@
 import React from "react";
 import style from "./recipe.module.css";
+import { Link } from "react-router-dom";
 
 function Recipe({
   title,
   calories,
-  image = "../loading.png",
-  ingredidents = [],
+  image = "https://github.com/HaochenQ/Recipe_App/blob/main/src/loading.png",
+  ingredients = [],
   more,
+  recipe,
 }) {
   return (
     <div className={style.recipe}>
@@ -17,19 +19,25 @@ function Recipe({
         <p>Calorise: {calories.toFixed(2)} KJ</p>
         <p>Ingredients:</p>
         <ol>
-          {ingredidents.map((item, index) => (
+          {ingredients.map((item, index) => (
             <li key={index}>{item}</li>
           ))}
         </ol>
         <button
           className={style.button}
-          onClick={() => {
-            window.location.href = more;
-            //window.history.replaceState("", "", more);
-          }}
+          // onClick={() => {
+          //   window.location.href = more;
+          // }}
           type="button"
         >
-          More Details
+          <Link
+            to={{
+              pathname: `/result/${title}`,
+              state: recipe,
+            }}
+          >
+            More Details
+          </Link>
         </button>
       </div>
     </div>
