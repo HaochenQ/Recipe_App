@@ -13,6 +13,7 @@ function RecipeList({ recipes }) {
           ingredients={hit.recipe.ingredientLines}
           more={hit.recipe.url}
           recipe={hit.recipe}
+          healthLabels={hit.recipe.healthLabels}
         />
       ))}
     </div>

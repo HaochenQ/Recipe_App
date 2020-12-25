@@ -9,6 +9,7 @@ function Recipe({
   ingredients = [],
   more,
   recipe,
+  healthLabels,
 }) {
   return (
     <div className={style.recipe}>
@@ -17,9 +18,9 @@ function Recipe({
       <div className={style.details}>
         <h1>{title}</h1>
         <p>Calorise: {calories.toFixed(2)} KJ</p>
-        <p>Ingredients:</p>
+        <p>Health Labels:</p>
         <ol>
-          {ingredients.map((item, index) => (
+          {healthLabels.map((item, index) => (
             <li key={index}>{item}</li>
           ))}
         </ol>

@@ -113,7 +113,7 @@ About
   letter-spacing: var(--mainSpacing);
   text-align: center;
   margin-bottom: 3.5rem;
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 
 .about-section {
@@ -179,6 +179,51 @@ Navbar
   color: rgb(238, 144, 113);
   width: 12rem;
 }
+
+.burger div {
+  /* 设置汉堡按钮三层条 */
+  width: 25px;
+  height: 3px;
+  background-color: #8f8f8f;
+  margin: 4px;
+}
+
+.burger {
+  display: none;
+}
+
+/* responsive */
+@media screen and (max-width: 768px) {
+  .burger {
+    display: block;
+  }
+  .nav-links {
+    display: none;
+  }
+
+  @media screen and (max-width: 768px) {
+    /* .navbar.responsive {
+      position: relative;
+    } */
+    .navbar.responsive.burger div {
+      background-color: coral;
+    }
+
+    .navbar.responsive .nav-links {
+      border-radius: 5%;
+      display: block;
+      background: rgba(144, 144, 144, 0.4);
+      padding: 3%;
+      position: absolute;
+      right: 0;
+      top: 5rem;
+    }
+    .nav-links a {
+      margin-right: 0%;
+    }
+  }
+}
+
 /* 
 ====== 
 recipe page

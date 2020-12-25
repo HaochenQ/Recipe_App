@@ -39,14 +39,19 @@
   height: 35%;
 }
 .details {
+  font-weight: 400;
   margin-left: 3%;
   margin-right: 3%;
   padding-bottom: 3%;
 }
+ol {
+  font-weight: normal;
+}
 
 .button {
   position: absolute;
-  bottom: 3%;
+  right: 3%;
+  bottom: 2%;
   height: 25px;
   background: rgb(195, 194, 194);
   border: none;
