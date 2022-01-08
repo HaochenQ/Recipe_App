@@ -55,6 +55,7 @@ ol {
   height: 25px;
   background: rgb(195, 194, 194);
   border: none;
+  border-radius: 8px;
   color: rgb(38, 39, 39);
   padding: 10px, 20px;
 }

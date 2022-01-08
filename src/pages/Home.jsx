@@ -3,6 +3,7 @@ import { Route, Switch, useHistory } from "react-router-dom";
 import RecipeList from "../components/RecipeList";
 import SearchForm from "../components/SearchForm";
 
+//receipe API
 const APP_ID = "2f780db3";
 const APP_KEY = "71b5514fd4eb652e3992f2fa99dcd340";
 

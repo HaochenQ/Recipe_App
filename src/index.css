@@ -181,7 +181,7 @@ Navbar
 }
 
 .burger div {
-  /* 设置汉堡按钮三层条 */
+  /* burger */
   width: 25px;
   height: 3px;
   background-color: #8f8f8f;
@@ -271,7 +271,7 @@ recipe page
     );
   background-blend-mode: soft-light, screen;
 }
-.cocktail-section {
+.recipe-section {
   text-align: center;
 }
 .recipe {

@@ -10,6 +10,8 @@ function Recipe({
   more,
   recipe,
   healthLabels,
+  dietLabels,
+  cuisineType,
 }) {
   return (
     <div className={style.recipe}>
@@ -17,12 +19,16 @@ function Recipe({
 
       <div className={style.details}>
         <h1>{title}</h1>
-        <p>Calorise: {calories.toFixed(2)} KJ</p>
-        <p>Health Labels:</p>
+        <p>Cuision Type: {cuisineType.toString().toUpperCase()}</p>
+        <p>Calories: {calories.toFixed(2)} KJ</p>
+        <p>Diet Labels:</p>
         <ol>
-          {healthLabels.map((item, index) => (
+          {healthLabels.slice(0, 5).map((item, index) => (
             <li key={index}>{item}</li>
           ))}
+          {/* {dietLabels.map((item, index) => (
+            <li key={index}>{item}</li>
+          ))} */}
         </ol>
         <button
           className={style.button}

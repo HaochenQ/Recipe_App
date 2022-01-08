@@ -14,6 +14,8 @@ function RecipeList({ recipes }) {
           more={hit.recipe.url}
           recipe={hit.recipe}
           healthLabels={hit.recipe.healthLabels}
+          dietLabels={hit.recipe.dietLabels}
+          cuisineType={hit.recipe.cuisineType}
         />
       ))}
     </div>

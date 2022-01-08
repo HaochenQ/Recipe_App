@@ -10,7 +10,7 @@ function RecipeDetails(props) {
   } = props.location.state;
   return (
     <div className="recipePage">
-      <section className="section cocktail-section">
+      <section className="section recipe-section">
         <button
           onClick={() => {
             props.history.goBack();
@@ -30,7 +30,8 @@ function RecipeDetails(props) {
               <span className="recipe-data">source :</span> {source}
             </p>
             <p>
-              <span className="recipe-data">weight :</span> {totalWeight} g
+              <span className="recipe-data">weight :</span>{" "}
+              {totalWeight.toFixed(2)} g
             </p>
             <span className="recipe-data">ingredients :</span>{" "}
             <ol>
