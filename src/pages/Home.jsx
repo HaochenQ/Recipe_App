@@ -4,8 +4,8 @@ import RecipeList from "../components/RecipeList";
 import SearchForm from "../components/SearchForm";
 
 //receipe API
-const APP_ID = "2f780db3";
-const APP_KEY = "71b5514fd4eb652e3992f2fa99dcd340";
+const APP_ID = process.env.REACT_APP_APP_ID;
+const APP_KEY = process.env.REACT_APP_APP_ID;
 
 function Home() {
   let history = useHistory();
