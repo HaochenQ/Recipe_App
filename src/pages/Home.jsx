@@ -5,7 +5,7 @@ import SearchForm from "../components/SearchForm";
 
 //receipe API
 const APP_ID = process.env.REACT_APP_APP_ID;
-const APP_KEY = process.env.REACT_APP_APP_ID;
+const APP_KEY = process.env.REACT_APP_APP_KEY;
 
 function Home() {
   let history = useHistory();
